@@ -88,6 +88,52 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+    
+    //video details - title, thumbnail,videoid
+    
+ func fetchAllTasks() -> [Video] {
+        let fetchRequest = NSFetchRequest<Video>(entityName: "Video")
+        let sortDescriptor1 = NSSortDescriptor(key: "title", ascending: true)
+        let sortDescriptor2 = NSSortDescriptor(key: "videoId", ascending: true)
+        fetchRequest.sortDescriptors = [sortDescriptor1, sortDescriptor2]
+        var results = [Video]()
+        do {
+            results = try persistentContainer.viewContext.fetch(fetchRequest)
+        } catch let error as NSError {
+            print("Fetch Error \(error)")
+        }
+        return results
+    }
+    
+    func fetchTask(id:String) -> Bool {
+        let fetchRequest = NSFetchRequest<Video>(entityName: "Video")
+        fetchRequest.predicate = NSPredicate(format: "videoId == %@", id)
+        
+        var results :Bool = false
+        var records = [Video]()
+        do {
+            records = try persistentContainer.viewContext.fetch(fetchRequest)
+            if records.count > 0
+            {
+                results = true
+            }
+            else
+            {
+                results = false
+            }
+            
+        } catch let error as NSError {
+            print("Fetch Error \(error)")
+        }
+        return results
+    }
+    
+    
+   }
 
-}
+
+
+
+
+
 

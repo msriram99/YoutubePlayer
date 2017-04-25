@@ -13,6 +13,11 @@
 		36715EA71EA57CCA00DA0E73 /* YouTubeMusicPlayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 36715EA51EA57CCA00DA0E73 /* YouTubeMusicPlayer.xcdatamodeld */; };
 		36715EA91EA57CCA00DA0E73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36715EA81EA57CCA00DA0E73 /* Assets.xcassets */; };
 		36715EAC1EA57CCA00DA0E73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36715EAA1EA57CCA00DA0E73 /* LaunchScreen.storyboard */; };
+		36715EB41EA6F07700DA0E73 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36715EB31EA6F07700DA0E73 /* DetailViewController.swift */; };
+		36715EB61EA805FF00DA0E73 /* YTPlayerView-iframe-player.html in Resources */ = {isa = PBXBuildFile; fileRef = 36715EB51EA805FF00DA0E73 /* YTPlayerView-iframe-player.html */; };
+		36715EB81EABF2D300DA0E73 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36715EB71EABF2D300DA0E73 /* TableViewController.swift */; };
+		36715EBC1EAC447900DA0E73 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36715EBB1EAC447900DA0E73 /* TableViewCell.swift */; };
+		7CCACDF298D93CE6E24F75DF /* Pods_YouTubeMusicPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F89C5AD108D28D02A17CD4B6 /* Pods_YouTubeMusicPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,13 @@
 		36715EA81EA57CCA00DA0E73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36715EAB1EA57CCA00DA0E73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36715EAD1EA57CCA00DA0E73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36715EB31EA6F07700DA0E73 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		36715EB51EA805FF00DA0E73 /* YTPlayerView-iframe-player.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "YTPlayerView-iframe-player.html"; path = "Pods/youtube-ios-player-helper/youtube-ios-player-helper/Assets.bundle/Assets/YTPlayerView-iframe-player.html"; sourceTree = "<group>"; };
+		36715EB71EABF2D300DA0E73 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		36715EBB1EAC447900DA0E73 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		382CD53E5519A9D3ADA920A1 /* Pods-YouTubeMusicPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouTubeMusicPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-YouTubeMusicPlayer/Pods-YouTubeMusicPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		657FCA30A9972307E1052D17 /* Pods-YouTubeMusicPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouTubeMusicPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YouTubeMusicPlayer/Pods-YouTubeMusicPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		F89C5AD108D28D02A17CD4B6 /* Pods_YouTubeMusicPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YouTubeMusicPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CCACDF298D93CE6E24F75DF /* Pods_YouTubeMusicPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +53,11 @@
 		36715E921EA57CCA00DA0E73 = {
 			isa = PBXGroup;
 			children = (
+				36715EB51EA805FF00DA0E73 /* YTPlayerView-iframe-player.html */,
 				36715E9D1EA57CCA00DA0E73 /* YouTubeMusicPlayer */,
 				36715E9C1EA57CCA00DA0E73 /* Products */,
+				AE59BFB36CAEF7472D5A2915 /* Pods */,
+				CCADB7030C1B3223C4363137 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +74,33 @@
 			children = (
 				36715E9E1EA57CCA00DA0E73 /* AppDelegate.swift */,
 				36715EA01EA57CCA00DA0E73 /* ViewController.swift */,
+				36715EB71EABF2D300DA0E73 /* TableViewController.swift */,
+				36715EBB1EAC447900DA0E73 /* TableViewCell.swift */,
 				36715EA21EA57CCA00DA0E73 /* Main.storyboard */,
+				36715EB31EA6F07700DA0E73 /* DetailViewController.swift */,
 				36715EA81EA57CCA00DA0E73 /* Assets.xcassets */,
 				36715EAA1EA57CCA00DA0E73 /* LaunchScreen.storyboard */,
 				36715EAD1EA57CCA00DA0E73 /* Info.plist */,
 				36715EA51EA57CCA00DA0E73 /* YouTubeMusicPlayer.xcdatamodeld */,
 			);
 			path = YouTubeMusicPlayer;
+			sourceTree = "<group>";
+		};
+		AE59BFB36CAEF7472D5A2915 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				657FCA30A9972307E1052D17 /* Pods-YouTubeMusicPlayer.debug.xcconfig */,
+				382CD53E5519A9D3ADA920A1 /* Pods-YouTubeMusicPlayer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CCADB7030C1B3223C4363137 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F89C5AD108D28D02A17CD4B6 /* Pods_YouTubeMusicPlayer.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36715EB01EA57CCA00DA0E73 /* Build configuration list for PBXNativeTarget "YouTubeMusicPlayer" */;
 			buildPhases = (
+				62329B0EAF9FE4EF11101B49 /* [CP] Check Pods Manifest.lock */,
 				36715E971EA57CCA00DA0E73 /* Sources */,
 				36715E981EA57CCA00DA0E73 /* Frameworks */,
 				36715E991EA57CCA00DA0E73 /* Resources */,
+				2ED416C59515A4C31BEC6439 /* [CP] Embed Pods Frameworks */,
+				65CC5CD8A163AF1384820136 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,11 +167,60 @@
 			files = (
 				36715EAC1EA57CCA00DA0E73 /* LaunchScreen.storyboard in Resources */,
 				36715EA91EA57CCA00DA0E73 /* Assets.xcassets in Resources */,
+				36715EB61EA805FF00DA0E73 /* YTPlayerView-iframe-player.html in Resources */,
 				36715EA41EA57CCA00DA0E73 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2ED416C59515A4C31BEC6439 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YouTubeMusicPlayer/Pods-YouTubeMusicPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62329B0EAF9FE4EF11101B49 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		65CC5CD8A163AF1384820136 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YouTubeMusicPlayer/Pods-YouTubeMusicPlayer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		36715E971EA57CCA00DA0E73 /* Sources */ = {
@@ -142,6 +230,9 @@
 				36715EA11EA57CCA00DA0E73 /* ViewController.swift in Sources */,
 				36715EA71EA57CCA00DA0E73 /* YouTubeMusicPlayer.xcdatamodeld in Sources */,
 				36715E9F1EA57CCA00DA0E73 /* AppDelegate.swift in Sources */,
+				36715EBC1EAC447900DA0E73 /* TableViewCell.swift in Sources */,
+				36715EB81EABF2D300DA0E73 /* TableViewController.swift in Sources */,
+				36715EB41EA6F07700DA0E73 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +353,7 @@
 		};
 		36715EB11EA57CCA00DA0E73 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 657FCA30A9972307E1052D17 /* Pods-YouTubeMusicPlayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YouTubeMusicPlayer/Info.plist;
@@ -274,6 +366,7 @@
 		};
 		36715EB21EA57CCA00DA0E73 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 382CD53E5519A9D3ADA920A1 /* Pods-YouTubeMusicPlayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YouTubeMusicPlayer/Info.plist;
@@ -303,6 +396,7 @@
 				36715EB21EA57CCA00DA0E73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
